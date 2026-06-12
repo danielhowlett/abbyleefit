@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Abby Lee Fit - Modern Athletic Training</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#5F8FE8", // Athletic Blue
+                        "on-primary": "#ffffff",
+                        "background": "#FAF6F0", // Warm Cream
+                        "surface": "#FAF6F0",
+                        "surface-variant": "#EEF3F8", // Soft Blue-Gray
+                        "on-surface": "#1F1F1F", // Almost Black
+                        "on-surface-variant": "#6E6A64", // Warm Gray
+                        "outline": "#E5DFD6", // Light Neutral
+                        "accent": "#F28C38", // Orange
+                        "secondary": "#F28C38",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap-desktop": "120px",
+                        "section-gap-mobile": "64px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Sora", "sans-serif"],
+                        "body": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FAF6F0;
+            line-height: 1.6;
+        }
+        h1, h2, h3, h4, .font-headline {
+            font-family: 'Sora', sans-serif;
+            color: #1F1F1F;
+            letter-spacing: -0.02em;
+        }
+        .logo-font {
+            font-family: 'Sora', sans-serif;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+        }
+    </style>
+</head>
+<body class="text-on-surface-variant antialiased pt-20">
+<!-- TopNavBar -->
+<nav class="bg-surface/95 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline/50 shadow-sm transition-all duration-300">
+<div class="max-w-container-max mx-auto px-gutter flex justify-between items-center h-20">
+<a class="logo-font text-2xl tracking-tight text-on-surface hover:text-primary transition-colors" href="#">ABBY LEE FIT</a>
+<div class="hidden md:flex space-x-8 items-center text-sm font-semibold uppercase tracking-wider text-on-surface">
+<a class="hover:text-primary transition-colors" href="#about">About</a>
+<a class="hover:text-primary transition-colors" href="#programs">Programs</a>
+<a class="hover:text-accent transition-colors" href="#shop">Shop Strong Sis</a>
+<a class="hover:text-primary transition-colors" href="#coaching">Coaching</a>
+<a class="hover:text-primary transition-colors" href="#stories">Success Stories</a>
+</div>
+<button class="hidden md:block bg-primary text-on-primary px-6 py-2.5 rounded-full hover:bg-primary/90 transition-all font-bold text-sm shadow-md shadow-primary/20">Get Started</button>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-gutter py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<h1 class="text-5xl md:text-6xl font-extrabold leading-[1.1] text-on-surface">
+            Elevate Your Exercise Routine
+        </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-lg">
+            Personalized coaching focused on corrective exercise to build strength, restore mobility, and enhance your confidence. Train smarter, not harder.
+        </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<a class="bg-primary text-on-primary px-10 py-4 rounded-full text-center font-bold shadow-xl shadow-primary/20 hover:-translate-y-1 transition-transform" href="#coaching">Work With Abby</a>
+<a class="border-2 border-accent text-accent px-10 py-4 rounded-full text-center font-bold hover:bg-accent hover:text-on-secondary transition-all" href="#shop">Shop Strong Sis</a>
+</div>
+</div>
+<div class="relative w-full rounded-2xl overflow-hidden shadow-2xl border border-outline/30">
+<img alt="Trainer Abby Lee" class="object-cover w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7EXRQmSnRuHefE8JD-qXCAS5oeL3ixXwcQGVCG3MdAyrSb155TCP5kLqcYY6LIRj8-z0lTi9BZbLKzmnElxPMsakjbDzAf0LN-cNcK4dPUp67rl_7_y14GqKQqo3gcRspK5FWy6t4CyrFEiROvDCGmyrvkglaXVIplm4R_Es6WEnIIc26CuZnrNrtHR1yN7gWhCB638pHPw8_1fZdiQIyNogCWg3HoXWqb92bvYKzNh0A-DgM69YO1RsCO_BgdCAi9zSjNtMFWTE"/>
+</div>
+</section>
+<!-- Benefits Section -->
+<section class="bg-surface-variant py-20 md:py-28">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-16 space-y-4">
+<h2 class="text-3xl md:text-4xl font-extrabold text-on-surface">Why Train With Abby?</h2>
+<div class="w-20 h-1.5 bg-primary mx-auto rounded-full mb-6"></div>
+<p class="text-lg text-on-surface-variant max-w-2xl mx-auto">A holistic approach to reaching your goals, feeling your best, and sustaining your progress.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-surface p-10 rounded-2xl border border-outline/50 shadow-sm hover:shadow-md transition-shadow text-center">
+<span class="material-symbols-outlined text-primary text-5xl mb-6 block">fitness_center</span>
+<h3 class="text-xl font-bold text-on-surface mb-3">Customized Training</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Workouts tailored specifically to your body, goals, and lifestyle for optimal results.</p>
+</div>
+<div class="bg-surface p-10 rounded-2xl border border-outline/50 shadow-sm hover:shadow-md transition-shadow text-center">
+<span class="material-symbols-outlined text-primary text-5xl mb-6 block">restaurant</span>
+<h3 class="text-xl font-bold text-on-surface mb-3">Nutrition Support</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Sustainable, non-restrictive guidance to fuel your body and complement your training.</p>
+</div>
+<div class="bg-surface p-10 rounded-2xl border border-outline/50 shadow-sm hover:shadow-md transition-shadow text-center">
+<span class="material-symbols-outlined text-primary text-5xl mb-6 block">accessibility_new</span>
+<h3 class="text-xl font-bold text-on-surface mb-3">Corrective Focus</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Emphasis on mobility and form to prevent injury and restore natural movement patterns.</p>
+</div>
+<div class="bg-surface p-10 rounded-2xl border border-outline/50 shadow-sm hover:shadow-md transition-shadow text-center">
+<span class="material-symbols-outlined text-primary text-5xl mb-6 block">handshake</span>
+<h3 class="text-xl font-bold text-on-surface mb-3">Accountability</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Consistent check-ins, motivation, and support to keep you on track towards your goals.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Abby Section -->
+<section class="py-20 md:py-28" id="about">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="order-2 md:order-1 relative rounded-2xl overflow-hidden shadow-2xl border border-outline/30">
+<img alt="Abby Lee sitting" class="object-cover w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBm3V2SSebMwX5yDQ0n72ZJg57PILuT4UZrmBUbFOAGTGC6JOBIL0xCpjrlebh4i1ooQw4Z2x9XYIlyjWmQmwU0bi8UOh9oHriwCv4IHVsCElPLygFzN5o80U6xoPWaSx4ZJGmr1wxMVdEVV_3Ga8ngb0DjhEV_SMk19gCxvYoRMTjqUOGCy2_YFRN7WB11svQk6WMwmZd94PfSMhCYVsb2MP4pCSnStdPDRaHCnhGozj5ndkDxL6zlcdynzXu9Z2OC5jjne32xfs"/>
+</div>
+<div class="order-1 md:order-2 space-y-8">
+<span class="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest font-body">Certified Personal Trainer &amp; Nutritionist</span>
+<h2 class="text-4xl md:text-5xl font-extrabold text-on-surface leading-tight">Meet Abby Lee</h2>
+<div class="space-y-6 text-lg leading-relaxed text-on-surface-variant">
+<p class="">
+                    I believe that fitness should empower you, not exhaust you. With a specialized focus on Corrective Exercise, my goal is to help you build functional strength, heal from past injuries, and create a sustainable routine that you actually enjoy.
+                </p>
+<p class="">
+                    Together, we'll shift the focus from quick fixes to long-term wellness, ensuring your body feels as good as it looks. Let's build a foundation of strength that supports you in every aspect of your life.
+                </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="bg-surface-variant py-20 md:py-28" id="programs">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-20 space-y-4">
+<h2 class="text-4xl font-extrabold text-on-surface">Coaching Services</h2>
+<p class="text-lg text-on-surface-variant">Flexible options designed to meet you where you are.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch">
+<!-- Card 1 -->
+<div class="bg-surface rounded-3xl p-10 shadow-lg border border-outline/50 flex flex-col hover:border-primary/30 transition-colors"><div class="flex flex-col h-full p-8">
+<div class="mb-4">
+<h3 class="text-2xl font-bold text-on-surface font-headline">Personal Training</h3>
+<div class="text-primary text-3xl font-extrabold font-headline mt-1">$50<span class="text-sm text-on-surface-variant font-normal font-body">/session</span></div>
+</div>
+<p class="text-sm text-on-surface-variant mb-4 leading-relaxed">Individualized exercise programs and one-on-one training designed specifically to help you reach your goals.</p>
+<div class="mb-4">
+<span class="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Nutrition &amp; Lifestyle Included</span>
+</div>
+<div class="border-t border-outline/30 pt-4 mb-6">
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant block mb-3">Includes</span>
+<ul class="space-y-3 text-on-surface-variant text-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span>In person or virtual</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span>Individualized programs</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span>1:1 focused training</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span>Lifestyle coaching</li>
+</ul>
+</div>
+<div class="mt-auto">
+<a class="block w-full bg-primary text-on-primary py-3 rounded-full text-center font-bold text-sm hover:brightness-110 transition-all" href="https://forms.gle/coaching-inquiry-form">Apply for Coaching</a>
+</div>
+</div></div>
+<!-- Card 2 -->
+<div class="bg-surface rounded-3xl p-10 shadow-2xl border-2 border-primary flex flex-col relative transform md:-translate-y-6"><div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-accent text-on-secondary px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-lg font-body">Most Popular</div>
+<div class="flex flex-col h-full p-8">
+<div class="mb-4">
+<h3 class="text-2xl font-bold text-on-surface font-headline">Small Group Training</h3>
+<div class="text-primary text-3xl font-extrabold font-headline mt-1">$35<span class="text-sm text-on-surface-variant font-normal font-body">/session per person</span></div>
+</div>
+<p class="text-sm text-on-surface-variant mb-4 leading-relaxed">All the elements of personal training but in a small group of up to 4 people at a discounted price.</p>
+<div class="border-t border-outline/30 pt-4 mb-6">
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant block mb-3">Includes</span>
+<ul class="space-y-3 text-on-surface-variant text-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span>All personal training elements</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span>Small group (up to 4)</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span>Discounted group rate</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span>Group accountability</li>
+</ul>
+</div>
+<div class="mt-auto">
+<a class="block w-full bg-primary text-on-primary py-3 rounded-full text-center font-bold text-sm hover:brightness-110 transition-all shadow-xl shadow-primary/20" href="https://forms.gle/coaching-inquiry-form">Apply for Coaching</a>
+</div>
+</div></div>
+<!-- Card 3 -->
+<div class="bg-surface rounded-3xl p-10 shadow-lg border border-outline/50 flex flex-col hover:border-primary/30 transition-colors"><div class="flex flex-col h-full p-8">
+<div class="mb-4">
+<h3 class="text-2xl font-bold text-on-surface font-headline">Nutrition Coaching</h3>
+<div class="text-primary text-3xl font-extrabold font-headline mt-1">$120<span class="text-sm text-on-surface-variant font-normal font-body">/month</span></div>
+</div>
+<p class="text-sm text-on-surface-variant mb-4 leading-relaxed">Individualized nutrition and macro plans with lifestyle habit coaching to help you reach your goals.</p>
+<div class="mb-4">
+<span class="inline-block bg-surface-variant text-on-surface-variant px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Workouts Not Included</span>
+</div>
+<div class="border-t border-outline/30 pt-4 mb-6">
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant block mb-3">Includes</span>
+<ul class="space-y-3 text-on-surface-variant text-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span>Individualized macro plans</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span>Lifestyle habit coaching</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span>Regular accountability check-ins</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span>Sustainable approach</li>
+</ul>
+</div>
+<div class="mt-auto">
+<a class="block w-full bg-primary text-on-primary py-3 rounded-full text-center font-bold text-sm hover:brightness-110 transition-all" href="https://forms.gle/coaching-inquiry-form">Apply for Coaching</a>
+</div>
+</div></div>
+</div>
+</div>
+</section>
+<!-- Shop Strong Sis Section -->
+<section class="py-20 md:py-28" id="shop">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="space-y-8 md:pr-12">
+<span class="inline-block text-accent font-bold tracking-widest uppercase text-xs font-body">Available Now</span>
+<h2 class="text-4xl md:text-5xl font-extrabold text-on-surface leading-tight">Shop Strong Sis</h2>
+<p class="text-lg text-on-surface-variant">Self-paced programs written by Abby — train on your own schedule with the same smart, corrective-exercise-minded approach as her 1:1 coaching.</p>
+<a class="inline-block bg-accent text-on-secondary px-10 py-4 rounded-full text-center font-bold hover:brightness-110 transition-all shadow-lg shadow-accent/20" href="https://shopify-store.com/collections/workout-plans">Shop Workout Plans</a>
+</div>
+<div class="space-y-8"><div class="grid grid-cols-1 sm:grid-cols-2 gap-6"><!-- Strong Sis Card -->
+<div class="bg-surface rounded-2xl border border-outline/50 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+<div class="aspect-video bg-surface-variant flex items-center justify-center border-b border-outline/30 relative overflow-hidden">
+<span class="material-symbols-outlined text-accent/20 text-6xl group-hover:scale-110 transition-transform duration-300">fitness_center</span>
+<div class="absolute top-3 right-3 bg-accent text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-tighter">Best Seller</div>
+</div>
+<div class="p-6 flex flex-col flex-1 space-y-3">
+<div>
+<h3 class="text-xl font-bold text-on-surface">Strong Sis</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mt-1">Abby's signature 12-week progressive strength program.</p>
+</div>
+<div class="text-2xl font-extrabold text-accent">$29.99</div>
+<a class="block w-full bg-primary text-on-primary py-3 rounded-xl text-center font-bold text-sm hover:bg-primary/90 transition-colors shadow-sm" href="https://shopify-store.com/products/strong-sis-program">Get the Plan</a>
+</div>
+</div>
+<!-- TRX Plan Card -->
+<div class="bg-surface rounded-2xl border border-outline/50 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+<div class="aspect-video bg-surface-variant flex items-center justify-center border-b border-outline/30 relative overflow-hidden">
+<span class="material-symbols-outlined text-accent/20 text-6xl group-hover:scale-110 transition-transform duration-300">home_health</span>
+<div class="absolute top-3 right-3 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-tighter">Limited Offer</div>
+</div>
+<div class="p-6 flex flex-col flex-1 space-y-3">
+<div>
+<h3 class="text-xl font-bold text-on-surface">TRX Plan: At Home</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mt-1">Full-body suspension training you can do anywhere.</p>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-extrabold text-accent">$1.00</span>
+<span class="text-xs text-on-surface-variant line-through opacity-50">$19.99</span>
+</div>
+<a class="block w-full bg-primary text-on-primary py-3 rounded-xl text-center font-bold text-sm hover:bg-primary/90 transition-colors shadow-sm" href="https://shopify-store.com/products/trx-plan-at-home">Get the Plan</a>
+</div>
+</div></div><p class="text-center text-[10px] uppercase tracking-widest font-bold opacity-50 mt-8">Digital programs • Checkout powered by Shopify</p></div>
+</div>
+</section>
+<!-- Client Testimonials -->
+<section class="bg-surface-variant py-20 md:py-28" id="stories">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-20 space-y-4"><h2 class="text-4xl font-extrabold text-on-surface">Success Stories</h2><div class="w-20 h-1.5 bg-primary mx-auto rounded-full"></div><p class="text-lg text-on-surface-variant max-w-2xl mx-auto">Real clients. Real confidence. Real progress.</p></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10"><!-- Anne J. - Full Width Featured Card -->
+<div class="bg-surface p-8 md:p-10 rounded-2xl border border-outline/50 shadow-md relative group hover:-translate-y-1 transition-all md:col-span-4 flex flex-col overflow-hidden">
+<span class="material-symbols-outlined absolute -top-4 -right-4 text-primary/5 text-8xl pointer-events-none select-none opacity-20">format_quote</span>
+<div class="flex gap-1 mb-4 relative z-10">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1">star</span>
+</div>
+<div class="max-w-3xl">
+<p class="text-on-surface-variant text-lg mb-6 relative z-10 leading-relaxed font-body">
+            "I am an active 71-year-old that worked hard at being physically fit and I thought I had reached my potential. Then I met Abby. She has taken me to a new level of being physically fit. As a bonus, my blood sugar is under control, I have lost weight and gained confidence. Abby has done this in a methodical way aware of my age, health, limitations and still maintaining goals that improve my daily quality of life."
+        </p>
+</div>
+<div class="mt-auto flex items-center gap-4 relative z-10">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">A</div>
+<div>
+<div class="font-extrabold text-on-surface tracking-wider uppercase text-xs font-headline">Anne J.</div>
+<div class="text-[10px] uppercase tracking-widest text-on-surface-variant opacity-70">Personal training client</div>
+</div>
+</div>
+</div>
+<!-- Cayce M. - Side by Side -->
+<div class="bg-surface p-8 rounded-2xl border border-outline/50 shadow-md relative group hover:-translate-y-1 transition-all md:col-span-2 flex flex-col overflow-hidden">
+<span class="material-symbols-outlined absolute -top-4 -right-4 text-primary/5 text-7xl pointer-events-none select-none opacity-20">format_quote</span>
+<div class="flex gap-1 mb-4 relative z-10">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1">star</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 relative z-10 leading-relaxed font-body">
+        "Having arthritis and multiple knee and hip surgeries, I was skeptical about my ability to resume an active lifestyle. However, in the past year of working with Abby, she has helped me get back to my active self."
+    </p>
+<div class="mt-auto flex items-center gap-4 relative z-10">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">C</div>
+<div>
+<div class="font-extrabold text-on-surface tracking-wider uppercase text-xs font-headline">Cayce M.</div>
+<div class="text-[10px] uppercase tracking-widest text-on-surface-variant opacity-70">Personal training client</div>
+</div>
+</div>
+</div>
+<!-- Grace G. - Side by Side -->
+<div class="bg-surface p-8 rounded-2xl border border-outline/50 shadow-md relative group hover:-translate-y-1 transition-all md:col-span-2 flex flex-col overflow-hidden">
+<span class="material-symbols-outlined absolute -top-4 -right-4 text-primary/5 text-7xl pointer-events-none select-none opacity-20">format_quote</span>
+<div class="flex gap-1 mb-4 relative z-10">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1">star</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 relative z-10 leading-relaxed font-body">
+        "Abby is an incredible trainer—genuine, kind, and truly invested in helping you reach your goals. She focuses on building lasting habits and always finds creative, effective ways to get there. Thanks to her encouragement and patience, I've gained not only progress but also a newfound confidence in myself and my ability to achieve my goals."
+    </p>
+<div class="mt-auto flex items-center gap-4 relative z-10">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">G</div>
+<div>
+<div class="font-extrabold text-on-surface tracking-wider uppercase text-xs font-headline">Grace G.</div>
+<div class="text-[10px] uppercase tracking-widest text-on-surface-variant opacity-70">Personal training client</div>
+</div>
+</div>
+</div></div>
+<p class="text-center text-[10px] uppercase tracking-widest font-bold opacity-40 mt-12">Client experiences vary. Coaching is designed for fitness, nutrition habits, and lifestyle support.</p></div>
+</section>
+<!-- FAQ Section -->
+<section class="py-20 md:py-28" id="faq">
+<div class="max-w-3xl mx-auto px-gutter">
+<div class="text-center mb-16 space-y-4">
+<h2 class="text-4xl font-extrabold text-on-surface">Frequently Asked Questions</h2>
+</div>
+<div class="space-y-8">
+<div class="bg-surface-variant/30 p-8 rounded-2xl border border-outline/50">
+<h4 class="text-xl font-bold text-on-surface mb-4">Do I need a gym membership to work with you?</h4>
+<p class="text-on-surface-variant leading-relaxed">Not necessarily! Depending on your goals and the program you choose, workouts can be tailored for at-home training with minimal equipment or structured for a full gym setting.</p>
+</div>
+<div class="bg-surface-variant/30 p-8 rounded-2xl border border-outline/50">
+<h4 class="text-xl font-bold text-on-surface mb-4">What is corrective exercise?</h4>
+<p class="text-on-surface-variant leading-relaxed">Corrective exercise involves assessing your movement patterns and identifying muscle imbalances or areas of weakness. We then use specific exercises to correct these issues, improving your posture, mobility, and reducing the risk of injury while building strength.</p>
+</div>
+<div class="bg-surface-variant/30 p-8 rounded-2xl border border-outline/50">
+<h4 class="text-xl font-bold text-on-surface mb-4">How do I get started with coaching?</h4>
+<p class="text-on-surface-variant leading-relaxed">Simply fill out the inquiry form at the bottom of this page. I'll review your goals and reach out to schedule a complimentary consultation call to discuss which option is best for you.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="bg-primary py-24 md:py-32 text-center px-gutter relative overflow-hidden" id="coaching">
+<div class="absolute inset-0 bg-white/5 opacity-20 pointer-events-none"></div>
+<div class="max-w-2xl mx-auto space-y-10 relative z-10">
+<h2 class="text-4xl md:text-5xl font-extrabold text-on-primary tracking-tight leading-tight">Ready to Build Your Strongest Self?</h2>
+<p class="text-xl text-on-primary/90 leading-relaxed font-semibold">
+            Take the first step towards a sustainable, pain-free fitness routine. Fill out the coaching application and let's discuss your goals.
+        </p>
+<a class="inline-block bg-white text-primary px-12 py-5 rounded-full font-bold text-lg hover:bg-surface-variant hover:scale-105 transition-all shadow-2xl shadow-black/10" href="https://forms.gle/coaching-inquiry-form">Apply For Coaching</a>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-on-surface text-white py-12 px-gutter border-t border-white/5">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="logo-font text-2xl tracking-tight">ABBY LEE FIT</div>
+<div class="flex gap-8 text-sm font-bold tracking-widest uppercase opacity-70 font-body">
+<a class="hover:opacity-100 transition-opacity" href="#privacy">Privacy</a>
+<a class="hover:opacity-100 transition-opacity" href="#terms">Terms</a>
+<a class="hover:opacity-100 transition-opacity" href="mailto:contact@abbyleefit.com">Contact</a>
+</div>
+<div class="text-white/50 text-xs tracking-wider font-body">
+            © 2024 ABBY LEE FIT. ALL RIGHTS RESERVED.
+        </div>
+</div>
+</footer></body>
+</html>
